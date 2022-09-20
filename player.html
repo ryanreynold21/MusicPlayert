@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href=#m">
+</head>
+<body>
+    <div class="container">       
+        <div class="playlistContainer"></div>
+        <audio src="./Joji.mp3" class="audioTag" >
+            Your browser doesn't support the audio element
+        </audio>
+        <div class="curentAndTotalTime"> 00:00 / 00:00</div>
+        <div id="progressBar">
+            <div id="currentProgress"></div>
+        </div>
+        <div class="musicplayer">
+            <i class="fas fa-backward-step controls previousButton "></i>
+            <i class="bi bi-play-circle    controls playButton     "></i>
+            <i class="bi bi-pause-circle   controls pauseButton    "></i>
+            <i class="fas fa-forward-step  controls nextButton     "></i>
+        </div>
+    </div>
+    <script src="./player.js"></script>
+
+  
+</body>
+</html>
